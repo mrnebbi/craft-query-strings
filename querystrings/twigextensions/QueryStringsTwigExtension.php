@@ -31,9 +31,12 @@ class QueryStringsTwigExtension extends Twig_Extension {
   {
     if (substr(craft()->request->queryString, 0,2) == "p=") {
       $queries = explode("&", craft()->request->queryString, 2);
-      $queryStrings = $queries[1];
-    } else {
-      $queryStrings = craft()->request->queryString;
+
+      if (sizeof($queries) > 1) {
+        $queryStrings = $queries[1];
+      } else {
+        return TemplateHelper::getRaw($url);
+      }
     }
 
     if (substr($url,-1) != "?") {
@@ -46,7 +49,6 @@ class QueryStringsTwigExtension extends Twig_Extension {
     
     return TemplateHelper::getRaw($return);
   }
-
 
   public function getQueryStrings($lookForKey = false)
   {
