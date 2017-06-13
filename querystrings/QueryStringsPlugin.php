@@ -10,7 +10,7 @@ class QueryStringsPlugin extends BasePlugin
 
     function getVersion()
     {
-        return '1.0';
+        return '1.0.1';
     }
 
     function getDeveloper()
@@ -25,7 +25,7 @@ class QueryStringsPlugin extends BasePlugin
     
     public function addTwigExtension()
     {
-        Craft::import( 'plugins.templatetools.twigextensions.QueryStringsTwigExtension' );
+        Craft::import( 'plugins.querystrings.twigextensions.QueryStringsTwigExtension' );
         return new QueryStringsTwigExtension();
     }
 }
