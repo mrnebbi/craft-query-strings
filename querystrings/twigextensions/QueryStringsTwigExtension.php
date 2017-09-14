@@ -73,10 +73,12 @@ class QueryStringsTwigExtension extends Twig_Extension {
     // Loop over query parts and add them to the object
     foreach ($queries as $query) {
       $querySplit  = explode("=", $query);
-      $queryObject = (object) ['key' => $querySplit[0],'value' => $querySplit[1]];
-      if (($lookForKey != false && $querySplit[0] == $lookForKey) || ($lookForKey == false)) {
-        array_push($objectArray,$queryObject);
-      }
+      if (sizeof($querySplit) > 1) {
+        $queryObject = (object) ['key' => $querySplit[0],'value' => $querySplit[1]];
+        if (($lookForKey != false && $querySplit[0] == $lookForKey) || ($lookForKey == false)) {
+          array_push($objectArray,$queryObject);
+        }
+      } 
     }
 
     // Return objects
