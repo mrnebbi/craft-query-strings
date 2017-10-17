@@ -1,12 +1,10 @@
 # Craft Query Strings
 
-
-[![version 1.0.4](https://img.shields.io/badge/version-1.0.4-brightgreen.svg)](https://github.com/ianisted/craft-query-strings)
+![Banner](banner.png)
+[![version 1.0.5](https://img.shields.io/badge/version-1.0.4-brightgreen.svg)](https://github.com/mrnebbi/craft-query-strings)
 
 
 A Craft CMS plugin to provide twig filters and functions to help with query string management. This is especially helpful for adding query strings back to pagination.
-
-This is a smaller, more focused version of code written for the [template tools](https://github.com/ianisted/template-tools) plugin.
 
 
 ## preserveQueryStrings

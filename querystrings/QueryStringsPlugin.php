@@ -10,12 +10,12 @@ class QueryStringsPlugin extends BasePlugin
 
     function getVersion()
     {
-        return '1.0.4';
+        return '1.0.5';
     }
 
     function getDeveloper()
     {
-        return 'Ian Isted';
+        return 'Mr Nebbi';
     }
 
     function getDeveloperUrl()
