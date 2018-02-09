@@ -1,0 +1,6 @@
+{
+    "name": "mrnebbi/craft-query-strings",
+    "description": "Add your query strings back into your Craft CMS pagination. Pull an array of all query strings, including duplicate keys",
+    "type": "craft-plugin",
+    "require": {}
+}

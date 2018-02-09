@@ -1,0 +1,50 @@
+[
+  {
+    "version": "1.0.0",
+    "downloadUrl": "https://github.com/mrnebbi/craft-query-strings/archive/master.zip",
+    "date": "2017-06-13T09:00:00.000000",
+    "notes": [
+      "[Added] First version. May need a little tidy up."
+    ]
+  },
+  {
+    "version": "1.0.1",
+    "downloadUrl": "https://github.com/mrnebbi/craft-query-strings/archive/master.zip",
+    "date": "2017-06-13T09:02:00.000000",
+    "notes": [
+      "[Fixed] Forgot to rename plugin extension name"
+    ]
+  },
+  {
+    "version": "1.0.2",
+    "downloadUrl": "https://github.com/mrnebbi/craft-query-strings/archive/master.zip",
+    "date": "2017-06-13T09:40:00.000000",
+    "notes": [
+      "[Fixed] This fixes an issue that would occur if pages had no query string. This shouldn’t have made it into production in the first place!"
+    ]
+  },
+  {
+    "version": "1.0.3",
+    "downloadUrl": "https://github.com/mrnebbi/craft-query-strings/archive/master.zip",
+    "date": "2017-06-13T10:40:00.000000",
+    "notes": [
+      "[Improved] Query Strings now has an icon!"
+    ]
+  },
+  {
+    "version": "1.0.4",
+    "downloadUrl": "https://github.com/mrnebbi/craft-query-strings/archive/master.zip",
+    "date": "2017-09-14T09:00:00.000000",
+    "notes": [
+      "[Fixed] Fixed a missing query value check that would cause the site to throw an error if no value was supplied but a key was found."
+    ]
+  },
+  {
+    "version": "1.0.5",
+    "downloadUrl": "https://github.com/mrnebbi/craft-query-strings/archive/master.zip",
+    "date": "2017-10-17T09:00:00.000000",
+    "notes": [
+      "[Improved] Updated developer details, and added a banner."
+    ]
+  }
+]
