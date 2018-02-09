@@ -46,5 +46,13 @@
     "notes": [
       "[Improved] Updated developer details, and added a banner."
     ]
+  },
+  {
+    "version": "1.0.6",
+    "downloadUrl": "https://github.com/mrnebbi/craft-query-strings/archive/master.zip",
+    "date": "2018-02-09T09:00:00.000000",
+    "notes": [
+      "[Added] Added release information and documentation url."
+    ]
   }
 ]

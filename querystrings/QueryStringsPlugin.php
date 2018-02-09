@@ -10,7 +10,7 @@ class QueryStringsPlugin extends BasePlugin
 
     function getVersion()
     {
-        return '1.0.5';
+        return '1.0.6';
     }
 
     function getDeveloper()
@@ -21,6 +21,16 @@ class QueryStringsPlugin extends BasePlugin
     function getDeveloperUrl()
     {
         return 'http://ianisted.co.uk';
+    }
+
+    function getDocumentationUrl()
+    {
+        return 'https://github.com/mrnebbi/craft-query-strings/';
+    }
+
+    function getReleaseFeedUrl()
+    {
+        return 'https://raw.github.com/mrnebbi/craft-query-strings/master/releases.json';
     }
     
     public function addTwigExtension()
