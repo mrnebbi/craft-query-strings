@@ -13,11 +13,10 @@ The Preserve Query String filter allows you to add `|preserveQueryStrings` to an
 
 E.g.
 
-```
+```twig
 {% if pageInfo.prevUrl %}<a href="{{ pageInfo.prevUrl|preserveQueryStrings }}">Previous Page</a>{% endif %}
 {% if pageInfo.nextUrl %}<a href="{{ pageInfo.nextUrl|preserveQueryStrings }}">Next Page</a>{% endif %}
 ```
-
 
 ## getQueryStrings
 
@@ -27,16 +26,32 @@ An array will be returned with objects. Use `.key` and `.value`.
 
 ### Return all URL queries
 
-```
+```twig
 {% for query in getQueryStrings() %}
-	{{ query.key }} - {{ query.value }}
+  {{ query.key }} - {{ query.value }}
 {% endfor %}
 ```
 
 ### Return only URL queries that match a key
 
-```
+```twig
 {% for query in getQueryStrings('lookForKey') %}
-	{{ query.key }} - {{ query.value }}
+  {{ query.key }} - {{ query.value }}
+{% endfor %}
+```
+
+## getQueryFormFields
+
+Sometimes you want to use query fields in a form, to preserve these values you can use the following in your templates.
+
+```twig
+{{ getQueryFormFields() }}
+```
+
+which is shorthand/equivalent to:
+
+```twig
+{% for query in getQueryStrings() %}
+  <input type="hidden" name="{{ query.key }}" value="{{ query.value }}">
 {% endfor %}
 ```
