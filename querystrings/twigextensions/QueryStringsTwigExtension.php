@@ -24,7 +24,8 @@ class QueryStringsTwigExtension extends Twig_Extension
   {
     return array(
       // 'getQueryStrings' => new Twig_Function('getQueryStrings', 'getQueryStrings'),
-        'getQueryStrings' => new \Twig_SimpleFunction('getQueryStrings', array($this, 'getQueryStrings'), array('is_safe' => array('html'))),
+        'getQueryStrings'    => new \Twig_SimpleFunction('getQueryStrings', array($this, 'getQueryStrings'), array('is_safe' => array('html'))),
+        'getQueryFormFields' => new \Twig_SimpleFunction('getQueryFormFields', array($this, 'getQueryFormFields'), array('is_safe' => array('html'))),
     );
   }
 
@@ -36,7 +37,7 @@ class QueryStringsTwigExtension extends Twig_Extension
 
     foreach ($queryStrings as $string)
     {
-      $return .= "<input type=\"hidden\" name=\"{$string['key']}\" value=\"{$string['value']}\">\n" ;
+      $return .= "<input type=\"hidden\" name=\"{$string['key']}\" value=\"{$string['value']}\">\n";
     }
 
     return TemplateHelper::getRaw($return);
