@@ -3,6 +3,7 @@
     "description": "Add your query strings back into your Craft CMS pagination. Pull an array of all query strings, including duplicate keys",
     "type": "craft-plugin",
     "require": {},
+    "version": "1.0.7",
     "extra": {
     	"name": "Query Strings",
 	    "handle": "query-strings"
